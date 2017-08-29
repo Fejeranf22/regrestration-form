@@ -10,25 +10,32 @@
     <title>the form practice page</title>
   </head>
   <body>
-    <div class="container">
-      <div class="rows">
+    <!-- <div class="container">
+      <div class="rows"> -->
+      <form class="register" action="index.html" method="post">
       <h1 class="header"> welcome to my form page.</h1>
       <p class="intro">please fill out the form below to sign in.</p>
-        <div class="set-1" action="index.html" method="post">
-          First name:<input type="text" name="firstname" value="" placeholder="first name" required>
-          Last name:<input type="text" name="lastname" value=""placeholder="last name" required>
-          <p class="intro">are you</p>
+        <div class="FirstLast">
+          <label for="firstname">First name:</label>
+          <input type="text" name="firstname" value="" placeholder="first name" required>
+          <label for="lastname">Last name:</label>
+          <input type="text" name="lastname" value=""placeholder="last name" required>
+        </div>
+        <div class="gender">
+          <label for="">Are You:</label>
           <input type="radio" name="gender" value="male"> Male
-          <br>
           <input type="radio" name="gender" value="female"> Female
-          <br>
           <input type="radio" name="gender" value="other"> Other
-          <br>
-          Email:<input class="username" placeholder="username" type="text" name="username" value=""required>
-          *** email will be used as your username ***
-          Password:<input class="password" placeholder="passward"type="text" name="" value=""required>
-          <br>
-          Date of Birth:
+        </div>
+        <div class="username">
+          <label for="">Email:</label>
+          <input class="username" placeholder="username" type="email" name="email" value=""required>
+          <strong>*** email will be used as your username ***</strong>
+          <label for="introPassword">Password:</label>
+          <input class="password" placeholder="passward"type="password" name="password" value=""required>
+        </div>
+        <div class="DOB">
+          <label for="">Date of Birth:</label>
           <select class="month-dropdown" placeholder="Month">
             <option value="january">January (01)</option>
             <option value="February">February (02)</option>
@@ -100,10 +107,13 @@
               <option value="">2010</option>
               <option value="">2011</option>
             </select>
-            <br>
-            <input type="submit" name="" value="submit">
           </div>
+          <div class="">
+            <input class="submit "type="submit">
+          </div>
+        </form>
+          <!-- </div>
         </div>
-    </div>
+    </div> -->
   </body>
 </html>

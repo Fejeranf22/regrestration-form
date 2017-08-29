@@ -4,7 +4,7 @@ body {
   background-color:#00cc99;
 }
 
-.container {
+.register {
   text-align: center;
   border-radius: 25px;
   background-color:#00cc99;
@@ -13,5 +13,8 @@ body {
 
   position: ;
   text-align:;
+}
 
+.submit{
+  border-radius: 50px;
 }
